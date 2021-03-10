@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">  
+    <title>Esercitazione Guidata</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <div class="box">
+            <div class="row">
+                    <div>
+                        <label for="name">Nome Cognome</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="distance">Inserisci la distanza</label>
+                        <input type="number" name="distance" id="distance">
+                    </div>
+                    <div>
+                        <label for="age">Scegli l'età</label>
+                        <select name="age" id="age">
+                            <option value="1">0-10 anni</option>
+                            <option value="2">11-17 anni</option>
+                            <option value="3">18-25 anni</option>
+                            <option value="4">26-64 anni</option>
+                            <option value="5">over 65 anni</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="row">
+                <input id="generate" type="button" value="Genera">
+                <input id="null" type="button" value="Annulla">
+            </div>
+        </div>
+        <h2>Il tuo biglietto</h2>
+        <div class="box">
+            <h3>Dettaglio passeggeri</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome Passeggero</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+            </thead>
+
+                <tbody>
+                    <tr>
+                        <td id="nameTicket"></td>
+                        <td id="discountTicket"></td>
+                        <td id="wagTicket"></td>
+                        <td id="cpCodeTicket"></td>
+                        <td id="priceTicket"></td>
+                    </tr>
+            </tbody>
+                
+            
+            </table>
+        </div>    
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
